@@ -1,10 +1,16 @@
 # RESTfulWS
-Sólo con fines educativos. 
+Evidencia para la materia Computación avanzada en Java.
 
-Instalación  TODO: agregar Proceso de Instalación. 
+## Instalación
+No disponible actualmente
 
-Uso  TODO: agregar INSTRUCCIONES de USO  Créditos  
+## Uso
+No disponible actualmente
 
-TODO: agregar Autor (es) 
+## Créditos
+- Iliana Aracely Porras Rico 2686254
+- Cesar Mauricio Cavazos Rodriguez 2683453
+- Luis Felipe Davila Robles 2711073
 
-Licencia  TODO: agregar Licencia
+## Licencia
+El código está disponible bajo la licencia GNU GPL-3.0
