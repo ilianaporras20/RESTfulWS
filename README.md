@@ -13,7 +13,10 @@ Apache Tomcat
 
 ## Pasos
 
-- Clonar repositorio git clone https://github.com/CesarCavazos97/RESTfulWS
+- Clonar repositorio git clone 
+``` https://github.com/ilianaporras20/RESTfulWS 
+```
+
 - Abrir proyecto desde Eclipse
 - Limpiar y construir proyecto
 - Clic derecho al proyecto en Eclipse.
