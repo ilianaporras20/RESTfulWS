@@ -3,85 +3,83 @@ Evidencia para la materia Computación avanzada en Java.
 
 # Instalación
 
-## Requerimientos
-
+## Requerimientos de la evidencia:
+Estos son los requermientos que utilizamos en nuestra evidencia
 1. Git
 2. Eclipse
 3. Java EE
 4. Maven
 5. Apache Tomcat
 
-## Pasos
+## Pasos a seguir
 
-- Clonar repositorio git clone https://github.com/ilianaporras20/RESTfulWS 
-- Abrir proyecto desde Eclipse
-- Limpiar y construir proyecto
-- Dar clic derecho al proyecto en Eclipse.
-- Seleccionar Exportar -> Archivo WAR.
-- Acceder al manager tomcat http://localhost:{PORT}/manager con credenciales de usuario con rol admin-gui
-- Seleccionar archivo .war creado anteriormente
-- Desplegar
+- Tenemos que clonar el repositorio 
+``` git clone https://github.com/ilianaporras20/RESTfulWS ```
+- Tenemos que abrir proyecto desde Eclipse y tambien hay que limpiar y construir proyecto
+- Daremos clic derecho al proyecto en Eclipse.
+- Le daremos clic a  **Exportar -> Archivo WAR**.
+-  Tenemos que accesar almanager tomcat http://localhost:{PORT}/manager con credenciales de usuario con rol admin-gui
+- Daremos clic al archivo .war creado anteriormente
+- Para finalizae se desplegara
 
-# Uso
-A en este apartado se explican los métodos disponibles para esta aplicación correspondientemente a cada ruta de acceso:
-   ## Ruta api/v1/
+# Uso:
+A en este apartado se explicaremos los métodos disponibles para esta aplicación:
+ 1. Ruta api/v1/
 
-- **GET**: Lista los recursos disponibles.
-- **OPTIONS**: Documentación.
+- **GET**: *Comando de ista de los recursos disponibles.*
+- **OPTIONS**: *Comando de documentación.*
 
-## Ruta api/v1/file
+ 2. Ruta api/v1/file
 
-- **GET**: *Descarga archivo en base al parámetro path.*
+- **GET**: *Este comando se descarga archivo en base al parámetro path.*
 ```
  api/v1/file/?path= 
  ```
-- **POST**: *Sube algún archivo con los parámetros name, dir y file.*
+- **POST**: *Este comando sube archivos con los parámetros name, dir y file.*
 ``` 
-api/v1/file/ name="imagen.jpg" dir="/Files" file@/Users/User/Downloads/imagen.jpg --form
+api/v1/file/ name="logo.jpg" dir="/Files" file@/Users/User/Desk/imagen.jpg --form
 
 ```
-- **DELETE**: *Elimina un archivo mediante el parámetro path.*
+- **DELETE**: *Este comando elimina un archivo mediante el parámetro path.*
 ``` 
 api/v1/file/?path=
 ``` 
-- **OPTIONS**: *Documentación.*
+3. Ruta api/v1/directory
 
-## Ruta api/v1/directory
-
-- **GET**: *Lista los archivos de un directorio con el parámetro dir.*
+- **GET**: *Este comando es una lista de los archivos de un directorio con el parámetro dir.*
 ``` 
 api/v1/directory/?dir=
 ``` 
-- **OPTIONS**: *Documentación.*
+- **OPTIONS**: *Comando de documentación.*
 
-## Ruta api/v1/notify
+4. Ruta api/v1/notify
 
-- **GET**: *Lista las notificaciones enviadas.*
-- **POST**: *Envía una notificación en base a los parámetros subject, message, toAddress y ccAddress.*
+- **GET**: *Este comando realiza una lista las notificaciones enviadas.*
+- **POST**: *Este comando envía una notificación en base a los parámetros subject, message, toAddress y ccAddress.*
 ``` 
-api/v1/notify subject="Test" message="Test Mensaje" toAddress="ej@contoso.com" ccAddress="ej2@contoso.com"
-``` 
-- **OPTIONS**: *Documentación*.
+api/v1/notify subject="Test" message="Test Mensaje" toAddress="iliana.porras@gmail.com"  ccAddress="iliana_099@gmail.com"
+ili``` 
+- **OPTIONS**: *Comando de documentación.*
 
-## Ruta api/v1/user
+5. Ruta api/v1/user
 
-- **GET**: *Lista los usuarios*.
-- POST: Crea un usuario mediante los parámetros username, password y fullName.
+- **GET**: *Este comando realiza Listas de usuarios*
+- **POST**: *Este comando crea un usuario con los parámetros username,password y fullName.*
 
 ```
-api/v1/user username="user" password="pass" fullName="Iliana Porras"
+api/v1/user username="u" password="iAp" fullName="Iliana Porras"
 ``` 
-- **OPTIONS**: *Documentación.*
+- **OPTIONS**: *Comando de documentación.*
 
-## Ruta api/v1/user/{username}
+6. Ruta api/v1/user/{username}
 
-- **GET**: *Muestra la información del usuario.*
-- **PUT**: *Actualiza la información del usuario mediante los parámetros username, password y fullName.*
+- **GET**: *Este comando nos enseña la información del usuario*
+- **PUT**: *Este comando actualiza la información del usuario con los parámetros username, password y fullName.*
 ``` 
-api/v1/user/user username="user" password="pass" fullName="Iliana Porras" 
+api/v1/user/user username="u" password="iAp" fullName="Iliana Porras" 
 ``` 
-- **DELETE**: *Elimina al usuario*.
-- **OPTIONS**: *Documentación.*
+- **DELETE**: *Este comando Eliminar un usuario*
+- **OPTIONS**: *Comando de documentación.*
 
 # Créditos
 - Iliana Aracely Porras Rico **2686254**
